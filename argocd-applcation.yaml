@@ -8,7 +8,7 @@ spec:
 
   source:
     repoURL: https://github.com/argoproj/argocd-example-apps.git
-    targetRevision: main
+    targetRevision: master
     path: nginx   # Path inside the repo containing Kubernetes manifests
 
   destination:
