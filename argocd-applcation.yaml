@@ -7,13 +7,13 @@ spec:
   project: default
 
   source:
-    repoURL: https://github.com/argoproj/argocd-example-apps.git
-    targetRevision: HEAD
-    path: guestbook        # Path inside the repo where manifests are located
+    repoURL: https://github.com/Mahendra-js/argocd-config.git
+    targetRevision: main
+    path: nginx       # Path inside the repo where manifests are located
 
   destination:
     server: https://kubernetes.default.svc
-    namespace: guestbook   # Target namespace for app deployment
+    project: default   # Target namespace for app deployment
 
   syncPolicy:
     automated:             # Automatically sync changes
